@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+		<!--<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+		<meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'"> -->
+		<title>Create Poll</title>
+		<script src="../src/index.js"></script>
+		<link rel="stylesheet" href="../CSS/main.css"></style>
+	</head>
+
+	<body>
+        <h1>Enter Poll Here</h1>
+        <label for="question">Question:</label>
+        <input type="text" id="question" name="question"><br>
+        <form>
+        	<label for="answerCreate">Answer:</label>
+        	<input type="text" id="answerCreate" name="answerCreate"><br>
+          <button onclick="addAnswer()">Add Answer</button>
+        </form>
+        <div id="currentAnswers">
+          <p>Current Answers:</p>
+        </div>
+        <button onclick="createPoll()" class="blue btn nav-btn">Create Poll</button>
+		<button onclick="location.href='../index.html'" class="red btn nav-btn">Go Back</button>
+
+	</body>
+</html>

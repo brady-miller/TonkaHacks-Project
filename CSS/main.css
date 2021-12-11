@@ -1,0 +1,43 @@
+body {
+	background-color: lightsalmon;
+}
+
+h1 {
+	text-align: center;
+	font-weight: bold;
+}
+
+.center-container {
+	text-align: center;
+}
+
+.btn {
+	margin-top: 6px;
+	text-align: center;
+	border-radius: 30px;
+	font-size: 1em;
+	color: black;
+}
+
+.slidecontainer {
+	text-align: center;
+}
+
+.barChart {
+	width: 100%;
+	max-width: 700px;
+}
+
+/* Colors */
+.blue { 
+	background-color: rgb(37, 157, 231);
+}
+
+.green {
+	background-color: lightgreen;
+}
+
+.red {
+	background-color: red;
+}
+

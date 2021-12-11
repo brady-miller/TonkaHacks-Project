@@ -10,6 +10,8 @@ const createWindow = () => {
         }
     });
   
+    // For testing
+    //win.loadFile('HTML/createPoll.html');
     win.loadFile('index.html');
 };
 

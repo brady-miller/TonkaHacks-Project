@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+		<!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+		<meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'"> -->
+		<link rel="stylesheet" href="../CSS/main.css"></style>
+		<title>Student Poll</title>
+		<script src="../src/index.js"></script>
+		
+</script>
+	</head>
+	
+    <body>
+        <h1>Answer the Poll Below</h1>
+
+		<button onclick="preparePoll()" class="btn">Click here to prepare poll</button>
+		<div class="center-container">
+        	<form id="studentPoll">
+				
+
+        	</form>
+		</div>
+        <div class="slidecontainer" id="sliderDiv" hidden>
+            <label for="understandingSlider">How confident are you in your answer?<br></label> 
+            <input type="range" min="1" max="10" value="10" class="slider" id="understandingSlider">
+        </div>
+
+		<button onclick="location.href='../index.html'" class="red btn nav-btn">Go Back</button>
+    </body>
+</html>
