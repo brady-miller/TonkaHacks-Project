@@ -12,18 +12,23 @@
 
 	<body>
         <h1>Enter Poll Here</h1>
-        <label for="question">Question:</label>
-        <input type="text" id="question" name="question"><br>
-        <form>
+        <form id ="form1">
+          <label for="question">Question:</label>
+          <input type="text" id="questionCreate" name="questionCreate"><br>
+        </form>
+		<!-- <button onclick="addQuestion()">Add Question</button> -->
+        <form id = "form2">
         	<label for="answerCreate">Answer:</label>
         	<input type="text" id="answerCreate" name="answerCreate"><br>
-          <button onclick="addAnswer()">Add Answer</button>
         </form>
+		<button onclick="addAnswer()">Add New Answer</button>
         <div id="currentAnswers">
-          <p>Current Answers:</p>
+          <p><b>Current Answers:</b></p>
         </div>
         <button onclick="createPoll()" class="blue btn nav-btn">Create Poll</button>
 		<button onclick="location.href='../index.html'" class="red btn nav-btn">Go Back</button>
+
+		<!-- ADD CONFIDENCE SLIDER-->
 
 	</body>
 </html>

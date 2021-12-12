@@ -12,7 +12,7 @@ h1 {
 }
 
 .btn {
-	margin-top: 6px;
+	margin-top: 10px;
 	text-align: center;
 	border-radius: 30px;
 	font-size: 1em;
@@ -41,3 +41,11 @@ h1 {
 	background-color: red;
 }
 
+.orange {
+	background-color: orange;
+}
+
+#currentAnswers p {
+	margin-top: 0.4em;
+	margin-bottom: 0.4em;
+}

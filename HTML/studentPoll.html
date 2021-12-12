@@ -15,18 +15,22 @@
     <body>
         <h1>Answer the Poll Below</h1>
 
-		<button onclick="preparePoll()" class="btn">Click here to prepare poll</button>
 		<div class="center-container">
+			<button onclick="preparePoll()" class="btn">Click here to prepare poll</button>
         	<form id="studentPoll">
 				
 
         	</form>
 		</div>
+        <br>
         <div class="slidecontainer" id="sliderDiv" hidden>
             <label for="understandingSlider">How confident are you in your answer?<br></label> 
-            <input type="range" min="1" max="10" value="10" class="slider" id="understandingSlider">
+            <input type="range" min="1" max="10" value="5" class="slider" id="understandingSlider">
         </div>
-
-		<button onclick="location.href='../index.html'" class="red btn nav-btn">Go Back</button>
+        <br>
+		<div class="center-container">
+			<button onclick="location.href='../index.html'" class="red btn nav-btn">Go Back</button> <br>
+			<button onclick="submitPoll()" class="green btn nav-btn" id="submitButton" hidden>Submit Poll</button>
+		</div>
     </body>
 </html>
