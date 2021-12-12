@@ -11,5 +11,8 @@
   "license": "MIT",
   "devDependencies": {
     "electron": "^16.0.4"
+  },
+  "dependencies": {
+    "chart.js": "^3.6.2"
   }
 }

@@ -45,7 +45,17 @@ h1 {
 	background-color: orange;
 }
 
+.white {
+	background-color: white;
+}
+
 #currentAnswers p {
 	margin-top: 0.4em;
 	margin-bottom: 0.4em;
+}
+
+canvas {
+    padding: 0;
+    margin: auto;
+    display: block;
 }

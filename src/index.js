@@ -1,7 +1,7 @@
 // Prevent more than one poll at a time
-if (sessionStorage.getItem("pollCreated") !== "true") sessionStorage.setItem("pollCreated", false);
+if (sessionStorage.getItem("pollCreated") !== "true") sessionStorage.setItem("pollCreated", "false");
 if (sessionStorage.getItem("answerList") == null) sessionStorage.setItem("answerList", "[]");
-console.log(sessionStorage.getItem("studentAnswer"));
+// console.log(sessionStorage.getItem("studentAnswer"));
 
 
 
@@ -16,13 +16,13 @@ function createPoll(){
     }
     */
     // Allow poll to be displayed and redirect
-    sessionStorage.setItem("pollCreated", true);
+    sessionStorage.setItem("pollCreated", "true");
     window.location.href = "../index.html";
 }
 
 function addAnswer() {
     var currentAnswerList = JSON.parse(sessionStorage.getItem("answerList"));
-    console.log(currentAnswerList)
+    // console.log(currentAnswerList)
     var newAnswerInput = document.getElementById("answerCreate");
     var newAnswer = newAnswerInput.value;
     currentAnswerList.push(newAnswer);
@@ -72,10 +72,9 @@ function preparePoll() {
         pollForm.append(answerLabel);
         
         // Add line break
-        pollForm.appendChild(document.createElement("br"));
-        
+        pollForm.appendChild(document.createElement("br"));     
     }
-
+    sessionStorage.setItem("pollCreated", "false")
     document.getElementById("submitButton").hidden = false;
 }
 
